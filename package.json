@@ -62,8 +62,12 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IgorBerezhnoy/My_ui-kit.git"
+    "url": "git+https://github.com/IgorBerezhnoy/My_ui-kit.git"
   },
   "author": "igorberezhnoy",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorBerezhnoy/My_ui-kit/issues"
+  },
+  "homepage": "https://github.com/IgorBerezhnoy/My_ui-kit#readme"
 }
