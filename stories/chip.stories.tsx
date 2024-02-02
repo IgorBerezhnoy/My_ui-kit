@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { CancelFilled } from '@/assets/icons'
+import s from '../src/components/ui/chip/chip.module.scss'
 
-import s from './chip.module.scss'
-
-import { Chip } from './'
+import { CancelFilled } from '../src/assets/icons'
+import { Chip } from '../src/components/ui/chip'
 
 const meta = {
   argTypes: {

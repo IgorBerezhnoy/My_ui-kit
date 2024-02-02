@@ -1,16 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { EditBlack, Ic_image, Linkedin, OFH } from '@/assets'
-import { Button, Card, Select, TextField, Typography } from '@/components/ui'
-import { OptionType } from '@/components/ui/Select/Select'
-import { Modal } from '@/components/ui/modal/index'
-import { ModalFooter } from '@/components/ui/modal/modalComponent/modalFooter/modalFooter'
-import { ModalHeader } from '@/components/ui/modal/modalComponent/modalHeader/modalHeader'
-import { ModalMainContent } from '@/components/ui/modal/modalComponent/modalMainContent/modalMainContent'
-import { TextArea } from '@/components/ui/textArea'
 import * as Dialog from '@radix-ui/react-dialog'
 
-import s from './modal.module.scss'
+import s from '../src/components/ui/modal/modal.module.scss'
+
+import { EditBlack, Ic_image, Linkedin, OFH } from '../src/assets'
+import { Button, Card, Select, TextField, Typography } from '../src/components/ui'
+import { OptionType } from '../src/components/ui/Select/Select'
+import { Modal } from '../src/components/ui/modal'
+import { ModalFooter } from '../src/components/ui/modal/modalComponent/modalFooter/modalFooter'
+import { ModalHeader } from '../src/components/ui/modal/modalComponent/modalHeader/modalHeader'
+import { ModalMainContent } from '../src/components/ui/modal/modalComponent/modalMainContent/modalMainContent'
+import { TextArea } from '../src/components/ui/textArea'
 
 const meta = {
   argTypes: {},

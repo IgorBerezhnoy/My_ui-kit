@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { ChevronDownFilled } from '@/assets/icons'
-import { Button, Typography } from '@/components/ui'
+import s from '../src/components/ui/header/header.module.scss'
 
-import s from '@/components/ui/header/header.module.scss'
-
-import { Header } from './'
+import { ChevronDownFilled } from '../src/assets/icons'
+import { Button, Typography } from '../src/components/ui'
+import { Header } from '../src/components/ui/header'
 
 const meta = {
   argTypes: {},
