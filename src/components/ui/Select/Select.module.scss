@@ -1,0 +1,87 @@
+.triggerWrapper {
+  display: inline-flex;
+  flex-direction: column-reverse;
+
+  &:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid var(--color-accent-200);
+  }
+
+  .label {
+    color: var(--color-gray-700);
+    transition: color .2s ease;
+  }
+
+  &:hover .label {
+    color: var(--color-accent-300);
+  }
+
+  .trigger {
+    all: unset;
+
+    pointer-events: auto;
+
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--color-dark-500);
+
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-gray-500);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      transition: transform .3s ease;
+    }
+
+    &[data-state='open'] {
+      border-bottom: 1px solid var(--color-accent-500);
+    }
+
+    &[data-state='open'] + .label {
+      color: var(--color-accent-500);
+    }
+
+    &[data-state='open'] .icon{
+      transform: rotate(180deg);
+    }
+
+    &[data-disabled] {
+      color: var(--color-gray-500);
+    }
+
+    &[data-disabled] + .label {
+      color: var(--color-gray-500);
+    }
+
+
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  cursor: auto;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.content {
+  width: var(--radix-select-trigger-width);
+  padding: 8px 0;
+
+  background-color: var(--color-light-500);
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}

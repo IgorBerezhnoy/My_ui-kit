@@ -1,0 +1,17 @@
+.selectItem {
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 16px;
+  outline: none;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-gray-100);
+  }
+
+  &[data-highlighted],
+  &[data-state='checked'] {
+    color: var(--color-accent-800);
+    background-color: var(--color-accent-50);
+  }
+
+}

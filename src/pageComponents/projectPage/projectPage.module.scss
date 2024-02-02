@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  padding: 24px 24px 30px;
+}
+
+.imgAndProjectInf {
+  display: flex;
+}
+
+.logoProject, .circle {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.circle {
+  background: var(--color-gray-100);
+}
+
+.grey {
+  color: var(--color-gray-700);
+}
+
+.black {
+  color: var(--color-dark-500);
+}
+
+.name {
+  margin-bottom: 12px;
+}
+
+.link {
+  display: flex;
+  margin-top: 5px;
+}
+
+.link:visited {
+  color: var(--color-accent-500)
+}
+
+.stack {
+  margin-top: 30px;
+}
+
+.chips {
+  margin-top: 12px;
+  
+  :not(:last-child) {
+	margin-right: 8px;
+  }
+}
+
+.chip {
+  margin-top: 6px;
+}
+
+.aboutProject {
+  margin-top: 24px;
+  margin-bottom: 17px;
+}
+
+.table {
+  margin-top: 24px;
+}
+
+.teamsTittle {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 18px;
+}
+
+.select {
+  display: inline-block;
+  margin-left: 8px;
+  border-bottom: none;
+  
+}
+
+.quantity {
+  margin-left: 26px;
+}
+
+.chevronLeftFilled {
+  margin-right: 12px;
+  margin-left: 32px;
+}
